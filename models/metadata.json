@@ -1,0 +1,52 @@
+{
+  "versi_model": "1.0.0",
+  "algoritma": "HistGradientBoostingRegressor(random_state=42)",
+  "target": "pm25_ugm3 tiga jam ke depan",
+  "fitur_input": [
+    "pm25_ugm3",
+    "pm25_lag1",
+    "pm25_lag3",
+    "pm25_lag24",
+    "tren_3j",
+    "jam_sin",
+    "jam_cos",
+    "hari",
+    "suhu_C",
+    "kelembaban_pct",
+    "kecepatan_angin_ms",
+    "arah_sin",
+    "arah_cos",
+    "curah_hujan_mm",
+    "stasiun_kode"
+  ],
+  "stasiun": [
+    "Antapani",
+    "Cibeureum",
+    "Dago",
+    "Soekarno-Hatta",
+    "Ujungberung"
+  ],
+  "batas_alarm": 45,
+  "data_latih": "Juli 2024 - April 2026 (train + validation)",
+  "metrik_validation": {
+    "mae_model": 4.695,
+    "mae_baseline": 6.255,
+    "recall": 0.465,
+    "precision": 0.328
+  },
+  "metrik_test": {
+    "mae_model": 4.668,
+    "mae_baseline": 6.5,
+    "jam_di_atas_55": 239,
+    "alarm": 517,
+    "recall": 0.736,
+    "precision": 0.34,
+    "recall_baseline": 0.301
+  },
+  "versi_library": {
+    "python": "3.14.3",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.1.1",
+    "numpy": "2.5.5"
+  }
+}
