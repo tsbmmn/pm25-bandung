@@ -1,0 +1,90 @@
+{
+  "versi_model": "1.0.0",
+  "dibuat": "2026-11-20T06:57:42",
+  "algoritma": "HistGradientBoostingRegressor(random_state=42)",
+  "target": "PM2.5 (µg/m³) 3 jam ke depan",
+  "horizon_jam": 3,
+  "fitur": [
+    "pm25_ugm3",
+    "pm25_lag1",
+    "pm25_lag3",
+    "pm25_lag24",
+    "tren_3j",
+    "jam_sin",
+    "jam_cos",
+    "hari",
+    "suhu_C",
+    "kelembaban_pct",
+    "kecepatan_angin_ms",
+    "arah_sin",
+    "arah_cos",
+    "curah_hujan_mm",
+    "stasiun_kode"
+  ],
+  "stasiun": [
+    "Antapani",
+    "Cibeureum",
+    "Dago",
+    "Soekarno-Hatta",
+    "Ujungberung"
+  ],
+  "ambang_alarm": 45,
+  "ambang_kejadian": 55,
+  "periode_latih_final": "awal data s.d. 2026-04-30 (train + validation)",
+  "periode_test": "2026-05-01 s.d. 2026-06-30",
+  "metrik_validation": {
+    "mae": 4.695,
+    "recall": 0.465,
+    "precision": 0.328,
+    "f1": 0.385,
+    "jumlah_jam": 7238,
+    "jumlah_kejadian_di_atas_55": 43,
+    "jumlah_alarm": 61,
+    "alarm_benar": 20,
+    "mae_baseline": 6.255
+  },
+  "metrik_test": {
+    "mae": 4.683,
+    "recall": 0.736,
+    "precision": 0.339,
+    "f1": 0.464,
+    "jumlah_jam": 7205,
+    "jumlah_kejadian_di_atas_55": 239,
+    "jumlah_alarm": 519,
+    "alarm_benar": 176
+  },
+  "rentang_input_data_latih": {
+    "pm25_ugm3": {
+      "min": 1.0,
+      "max": 128.4
+    },
+    "suhu_C": {
+      "min": 12.0,
+      "max": 31.9
+    },
+    "kelembaban_pct": {
+      "min": 51.0,
+      "max": 100.0
+    },
+    "kecepatan_angin_ms": {
+      "min": 0.1,
+      "max": 7.9
+    },
+    "arah_angin_deg": {
+      "min": 0.0,
+      "max": 360.0
+    },
+    "curah_hujan_mm": {
+      "min": 0.0,
+      "max": 24.9
+    }
+  },
+  "catatan": "Validation jatuh di musim hujan, test di awal kemarau. Batas alarm dipilih di validation, tidak diubah setelah test.",
+  "versi_library": {
+    "python": "3.14.2",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.1.1",
+    "numpy": "2.5.5",
+    "joblib": "1.6.0"
+  }
+}
