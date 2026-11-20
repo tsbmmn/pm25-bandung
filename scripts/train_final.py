@@ -18,7 +18,7 @@ AMBANG_KEJADIAN = 55   # "kejadian" = PM2.5 aktual > 55
 HORIZON_JAM = 3        # target = PM2.5 3 jam ke depan
 AWAL_TEST = pd.Timestamp("2026-05-01")
 AKHIR_TEST = pd.Timestamp("2026-07-01")
-META_PATH = ROOT / "models" / "metadata.json"
+META_PATH = ROOT / "artifacts" / "metadata.json"
 
 # Pengaman: test hanya boleh dibuka sekali
 if META_PATH.exists() and "--paksa" not in sys.argv:
@@ -78,8 +78,8 @@ rentang_input = {
               "arah_angin_deg", "curah_hujan_mm"]
 }
 
-(ROOT / "models").mkdir(exist_ok=True)
-joblib.dump(model, ROOT / "models" / "model.joblib")
+(ROOT / "artifacts").mkdir(exist_ok=True)
+joblib.dump(model, ROOT / "artifacts" / "model.joblib")
 meta = {
     "versi_model": "1.0.0",
     "dibuat": datetime.now().isoformat(timespec="seconds"),
@@ -105,4 +105,4 @@ meta = {
     },
 }
 META_PATH.write_text(json.dumps(meta, indent=2, ensure_ascii=False), encoding="utf-8")
-print("\nTersimpan: models/model.joblib dan models/metadata.json")
+print("\nTersimpan: artifacts/model.joblib dan artifacts/metadata.json")

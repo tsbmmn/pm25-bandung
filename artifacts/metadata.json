@@ -86,5 +86,31 @@
     "pandas": "3.1.1",
     "numpy": "2.5.5",
     "joblib": "1.6.0"
-  }
+  },
+  "metrik_baseline": {
+    "nama": "persistence (PM2.5 3 jam lagi = PM2.5 sekarang)",
+    "validation": {
+      "mae": 6.255,
+      "recall": 0.326,
+      "precision": 0.104
+    },
+    "test": {
+      "mae": 6.5,
+      "recall": 0.649,
+      "precision": 0.224
+    }
+  },
+  "fitur_input": [
+    "stasiun",
+    "waktu",
+    "pm25_ugm3",
+    "pm25_lag1",
+    "pm25_lag3",
+    "pm25_lag24",
+    "suhu_C",
+    "kelembaban_pct",
+    "kecepatan_angin_ms",
+    "arah_angin_deg",
+    "curah_hujan_mm"
+  ]
 }
