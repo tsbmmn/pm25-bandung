@@ -121,11 +121,11 @@ tests/test_api.py     smoke test
 
 ## Daftar periksa sebelum dikumpulkan
 
-- [ ] Repositori bersifat publik dan setiap anggota memiliki *commit*
-- [ ] *Notebook* dapat dijalankan ulang dari awal sampai akhir tanpa galat
-- [ ] *Baseline* wajib dilaporkan dan dibandingkan
+- [x] Repositori bersifat publik dan setiap anggota memiliki *commit*
+- [x] *Notebook* dapat dijalankan ulang dari awal sampai akhir tanpa galat
+- [x] *Baseline* wajib dilaporkan dan dibandingkan
 - [x] Data *test* hanya dibuka satu kali, di akhir
 - [x] `artifacts/metadata.json` berisi versi model, fitur masukan, *threshold*, dan metrik
-- [ ] Aplikasi dapat dibuka orang lain melalui tautan, termasuk dari ponsel
+- [x] Aplikasi dapat dibuka orang lain melalui tautan, termasuk dari ponsel
 - [x] Aplikasi tidak berhenti mendadak ketika menerima masukan yang tidak wajar
 - [ ] Laporan paling banyak 6 halaman dan video paling lama 5 menit
