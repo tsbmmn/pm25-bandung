@@ -5,7 +5,7 @@
 | Anggota | NIM | Bagian yang dikerjakan |
 |---|---|---|
 | Teresia Denia Primisani | 2404107 | EDA, pembersihan data, baseline, fitur, pemilihan model dan batas alarm, deploy|
-| Nayla Putri Ashfiya | [NIM] | model final, evaluasi test, artifact + metadata, API FastAPI, aplikasi Streamlit |
+| Nayla Putri Ashfiya | [2404688] | model final, evaluasi test, artifact + metadata, API FastAPI, aplikasi Streamlit |
 
 ## Masalah dan pengguna
 
