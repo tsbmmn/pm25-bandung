@@ -1,6 +1,6 @@
 # Prakiraan PM2.5 Bandung · Tim [Anak Bang Rifki]
 
-**Kasus:** 06 · Prakiraan PM2.5 Bandung · **Aplikasi:** [https://pm25-bandung-82cg8k7i4ii6bvn48znlzf.streamlit.app/] · **Video:** [tautan video]
+**Kasus:** 06 · Prakiraan PM2.5 Bandung · **Aplikasi:** [https://pm25-bandung-82cg8k7i4ii6bvn48znlzf.streamlit.app/] · **Video:** [https://drive.google.com/file/d/1CJSCIG0lTCJuABX38eOTO6tqdzyYjrL_/view?usp=sharing]
 
 | Anggota | NIM | Bagian yang dikerjakan |
 |---|---|---|
